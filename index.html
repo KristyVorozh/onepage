@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav_burger-logo" class="nav_burger-logo"><img src="img/threelines.png" alt=""></div>
+            <div id="nav_burger-opacity">
+            <div id="nav_burger" class="nav_burger">
+            <div class="container_menu">
+                <ul>
+                    <li class="home active"><a href="#home">Личная информация</a></li>
+                    <li class="experience"><a href="#experience">Опыт</a></li>
+                    <li class="JS"><a href="#JS">JavaScript</a></li>
+                    <li class="about"><a href="#about">О себе</a></li>
+                </ul>
+            </div>
+        </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <h1 class="wow animate__animated animate__fadeInLeft">Анкета</h1>
+        <div class="section_content">
+            <img src="img/home.png" alt="home">
+            <p class="wow animate__animated animate__fadeInRight">Личная информация</p>
+        </div>
+        <form class="form">
+            <div class="form-item">
+                <input type="text" value="Ворожейкина Кристина Александровна" class="form-input" required>
+                <label class="form-label">ФИО</label>
+            </div>
+            <div class="form-item">
+                <input type="date" value="2002-08-10" class="form-input" required>
+                <label class="form-label">Дата рождения</label>
+            </div>
+            <div class="form-item">
+                <input type="text" value="г.Томск" class="form-input" required>
+                <label class="form-label">Место проживания</label>
+            </div>
+            <div class="form-item">
+                <input type="text" value="https://join.skype.com/invite/K5ceRgujlHEH" class="form-input" required>
+                <label class="form-label">Skype</label>
+            </div>
+            <div class="form-item">
+                <input type="email" value="kristina.vorojejkina@yandex.ru" class="form-input" required>
+                <label class="form-label">E-mail</label>
+            </div>
+        </form>
+    </section>
+    <section id="experience">
+        <div class="section_content">
+            <img src="img/experience.png" alt="home">
+            <p class="wow animate__animated animate__fadeInRight" data-wow-offset="1">Расскажите о своем опыте</p>
+            <div class="container">
+            <div class="checkbox_form">
+                <div class="checkbox_form-flex">
+                <div class="checkbox_form">
+                    <input type="checkbox" checked="checked" class="checkbox_input1" id="checkbox" name="sogl"/>
+                    <label class="checkbox_label1" for="checkbox"><div class="label_text">БЭМ/OOCSS</div></label>
+                </div>
+                <div class="checkbox_form">
+                    <input type="checkbox" class="checkbox_input1" id="checkbox2" name="sogl"/>
+                    <label class="checkbox_label1"  for="checkbox2"><div class="label_text2">Stylus/LESS/SASS</div></label>
+                </div>
+                <div class="checkbox_form">
+                    <input type="checkbox" class="checkbox_input1" id="checkbox3" name="sogl"/>
+                    <label class="checkbox_label1"  for="checkbox3"><div class="label_text3">Работаю с SVG</div></label>
+                </div>
+            </div>
+            <div class="checkbox_form-flex">
+                <div class="checkbox_form">
+                    <input type="checkbox" checked="checked" class="checkbox_input1" id="checkbox4" name="sogl"/>
+                    <label class="checkbox_label1"  for="checkbox4"><div class="label_text4">Верстаю семантично</div></label>
+                </div>
+                <div class="checkbox_form">
+                    <input type="checkbox" checked="checked" class="checkbox_input1" id="checkbox5" name="sogl"/>
+                    <label class="checkbox_label1"  for="checkbox5"><div class="label_text2">ES2015/ES2016</div></label>
+                </div>
+                <div class="checkbox_form">
+                    <input type="checkbox" class="checkbox_input1" id="checkbox6" name="sogl"/>
+                    <label class="checkbox_label1"  for="checkbox6"><div class="label_text2">Gulp/GRUNT</div></label>
+                </div>
+            </div>
+            <div class="checkbox_form-flex">
+                <div class="checkbox_form">
+                    <input type="checkbox" class="checkbox_input1" id="checkbox4" name="sogl"/>
+                    <label class="checkbox_label1"  for="checkbox4"><div class="label_text4">Webpack</div></label>
+                </div>
+                <div class="checkbox_form">
+                    <input type="checkbox" checked="checked" class="checkbox_input1" id="checkbox5" name="sogl"/>
+                    <label class="checkbox_label1"  for="checkbox5"><div class="label_text2">jQuery</div></label>
+                </div>
+                <div class="checkbox_form">
+                    <input type="checkbox" checked="checked" class="checkbox_input1" id="checkbox6" name="sogl"/>
+                    <label class="checkbox_label1"  for="checkbox6"><div class="label_text2">Ипользую Git</div></label>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="JS">
+        <div class="section_content">
+            <img src="img/js.png" alt="home">
+            <p class="wow animate__animated animate__fadeInRight" data-wow-offset="10">Уровень владения JavaScript</p>
+        </div>
+        <div class="input_range">
+            <div class="input_range-text">
+                <p>Не владею</p>
+                <p>Использую готовые
+                    решения</p>
+                <p>Использую готовые решения
+                    и умею и переделывать</p>
+                <p>Пишу сложный JS с нуля</p>
+            </div>
+        <input type="text" class="js-range-slider" name="my_range" value="" />
+    </div>
+    </section>
+    <section id="about">
+        <div class="section_content">
+            <img src="img/about.png" alt="home">
+            <p class="wow animate__animated animate__fadeInRight" data-wow-offset="10">Расскажите о себе</p>
+            <div class="about_subtext">Напишите несколько предложений, чем привлекла наша вакансия
+                и что вы ожидаете от работы у нас.</div>
+                <div class="form-item">
+                    <textarea placeholder="Понравилось тем, что" class="form-input1" rows="20" cols="20">Добрый день! Frontend-ом занимаюсь практически год. Был опыт работы на фрилансе. Ваша вакансия заинтересовала тем, что нужно будет делать landing page, многостраничные сайты, также работать с написанием простых плагинов. Есть возможность развиваться и обучаться. На данный момент, к сожалению, не знаю PHP, но при необходимости смогу выучить его.</textarea>
+                </div>
+        </div>
+        <button>Готово</button>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
